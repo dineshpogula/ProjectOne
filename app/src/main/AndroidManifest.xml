@@ -5,10 +5,10 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Shilpa Bill"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
+        android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
         <activity
             android:name=".View.ProjOneActivity"
             android:label="@string/app_name"
@@ -16,9 +16,15 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".View.GmailSignInActivity" />
+        <activity
+            android:name=".View.ItemsActivityOne"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_items_one"
+            android:theme="@style/FullscreenTheme"></activity>
     </application>
 
 </manifest>

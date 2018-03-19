@@ -1,0 +1,87 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="com.dinesh.Shilpa.View.ItemsActivityOne">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="627dp"
+        android:adjustViewBounds="true"
+        android:alpha=".45"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pro_background" />
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"    >
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:stretchColumns="3"
+        android:layout_weight="0.3">
+        <TableRow
+            android:id="@+id/tablerowOne"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/fullscreen_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:keepScreenOn="true"
+                android:text="Entries"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tablerowTwo"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView
+                android:id="@+id/textViewSNO"
+                android:text="S.No"
+                android:textSize="25dp"/>
+            <TextView
+                android:id="@+id/textViewItemName"
+                android:text="    Name"
+                android:textSize="25dp"
+                android:typeface="serif"/>
+            <TextView
+                android:id="@+id/textViewQuantity"
+                android:text="Quantity"
+                android:paddingLeft="100dp"
+                android:textSize="25dp"/>
+
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        <include
+            android:id="@+id/fragmentOneLayout"
+            layout="@layout/items_selection_fragment_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2">
+        <Button
+            android:id="@+id/checkOutBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check Out"/>
+    </LinearLayout>
+</LinearLayout>
+</FrameLayout>

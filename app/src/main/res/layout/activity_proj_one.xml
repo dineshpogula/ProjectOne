@@ -4,9 +4,126 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000"
     tools:context="com.dinesh.Shilpa.View.ProjOneActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <include layout="@layout/content_proj_one" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="627dp"
+            android:adjustViewBounds="true"
+            android:alpha=".45"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pro_background"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="92dp"
+            android:src="@drawable/pro_logo"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="110dp" />
+
+        <EditText
+            android:id="@+id/mainEditTextOne"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingBottom="60dp"
+            android:text="User name"
+            android:textColor="#fff"
+            android:textSize="35sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <EditText
+            android:id="@+id/mainEditTextTwo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:paddingTop="80dp"
+            android:text="Password"
+            android:textColor="#fff"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <Button
+            android:id="@+id/adminLogin"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/gmailLogo"
+            android:layout_marginBottom="22dp"
+            android:layout_marginEnd="40dp"
+            android:layout_toStartOf="@+id/gmailLogo"
+            android:background="#81BEF7"
+            android:text=" Log In"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="117dp"
+            tools:layout_editor_absoluteY="415dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/adminLogin"
+            android:layout_alignTop="@+id/gmailLogo"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="OR"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="25dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="174dp"
+            tools:layout_editor_absoluteY="480dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/gmailLogo"
+            android:layout_marginEnd="27dp"
+            android:layout_toStartOf="@+id/gmailLogo"
+            android:text="Sign In With Gmail"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="25dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="70dp"
+            tools:layout_editor_absoluteY="532dp" />
+
+        <ImageView
+            android:id="@+id/gmailLogo"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="62dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/gmail_logo"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="310dp"
+            tools:layout_editor_absoluteY="500dp" />
+    </RelativeLayout>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"

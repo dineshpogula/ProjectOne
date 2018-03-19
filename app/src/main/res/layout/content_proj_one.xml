@@ -4,30 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.dinesh.Shilpa.View.ProjOneActivity"
     tools:showIn="@layout/activity_proj_one">
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="627dp"
         android:adjustViewBounds="true"
         android:alpha=".45"
         android:scaleType="centerCrop"
         android:src="@drawable/pro_background"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="259dp"
-        tools:layout_editor_absoluteY="209dp" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="8dp" />
 
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:src="@drawable/pro_logo"
-        tools:layout_editor_absoluteX="255dp"
-        tools:layout_editor_absoluteY="209dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="110dp" />
 
     <EditText
         android:id="@+id/mainEditTextOne"
@@ -36,25 +38,72 @@
         android:gravity="center"
         android:paddingBottom="60dp"
         android:text="User name"
+        android:textColor="#fff"
         android:textSize="35sp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="259dp"
-        tools:layout_editor_absoluteY="209dp" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <EditText
         android:id="@+id/mainEditTextTwo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
         android:gravity="center"
         android:paddingTop="80dp"
         android:text="Password"
+        android:textColor="#fff"
         android:textSize="35sp"
-        tools:layout_editor_absoluteX="259dp"
-        tools:layout_editor_absoluteY="209dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
     <Button
+        android:id="@+id/adminLogin"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="#81BEF7"
+        android:text=" Log In"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="415dp" />
+
+    <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="OR"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteY="480dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In With Gmail"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="532dp" />
+
+    <ImageView
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:id="@+id/gmailLogo"
+        android:src="@drawable/gmail_logo"
+        tools:layout_editor_absoluteX="310dp"
+        tools:layout_editor_absoluteY="500dp"
+        tools:ignore="MissingConstraints" />
 
 
 </android.support.constraint.ConstraintLayout>
