@@ -11,7 +11,7 @@ import android.widget.ImageView;
 
 import com.dinesh.Shilpa.R;
 
-public class ProjOneActivity extends AppCompatActivity {
+public class ProjOneActivity extends AppCompatActivity implements View.OnClickListener {
 
     private ImageView mGooggleSignIn;
     private static boolean intentFlag = false;
@@ -30,22 +30,9 @@ public class ProjOneActivity extends AppCompatActivity {
         });
 
         mGooggleSignIn = findViewById(R.id.gmailLogo);
-        mGooggleSignIn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
-
-
+        mGooggleSignIn.setOnClickListener(this);
     }
 
-    @Override
-    public void finish() {
-        super.finish();
-        Intent intent = new Intent(this, GmailSignInActivity.class);
-        startActivity(intent);
-    }
 
     @Override
     protected void onResume() {
@@ -73,5 +60,13 @@ public class ProjOneActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (v.getId() == R.id.gmailLogo) {
+            Intent intent = new Intent(this, GmailSignInActivity.class);
+            startActivity(intent);
+        }
     }
 }

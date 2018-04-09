@@ -48,15 +48,11 @@
         android:id="@+id/mainEditTextTwo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="8dp"
         android:gravity="center"
         android:paddingTop="80dp"
         android:text="Password"
         android:textColor="#fff"
         android:textSize="35sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp" />
 
@@ -71,7 +67,7 @@
         android:textSize="20dp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="117dp"
-        tools:layout_editor_absoluteY="415dp" />
+        tools:layout_editor_absoluteY="435dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -97,13 +93,13 @@
         tools:layout_editor_absoluteY="532dp" />
 
     <ImageView
+        android:id="@+id/gmailLogo"
         android:layout_width="85dp"
         android:layout_height="85dp"
-        android:id="@+id/gmailLogo"
         android:src="@drawable/gmail_logo"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="310dp"
-        tools:layout_editor_absoluteY="500dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="500dp" />
 
 
 </android.support.constraint.ConstraintLayout>
